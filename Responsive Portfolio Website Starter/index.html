@@ -1,19 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
 
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <script src="script.js"></script>
-  </body>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="#home" class="logo">
+      Nana<span>Boakye</span>
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="gradient-btn">Contact Me</a>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1> Hi, It's <span>Nana</span></h1>
+      <h3>I'm a <span>Software Engineer</span>
+      </h3>
+      <p>I build secure, intelligent web applications that solve real problems. As a Computer Science student, I combine full-stack development expertise with cybersecurity fundamentals to create robust solutions. My tech stack includes Python, JavaScript, React, Vue.js, Django, and TypeScript, with a growing focus on AI integration and system design. Recent projects include a vulnerability assessment tool and an AI-powered code review assistant that helps developers identify security issues.
+Currently seeking internship opportunities where I can apply my development skills while contributing to secure, innovative software. I'm passionate about the intersection of AI and cybersecurity, and I'm always eager to connect with fellow developers and security professionals.
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com/nanaboakye-dev" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/nana-boakye-osei-frimpong-55a88a345" target="_blank">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="">
+          <i class="bx bxl-instagram-alt"></i>
+
+        </a>
+
+        <a href="">
+          <i class="bx bxl-snapchat"></i>
+
+        </a>
+      </div>
+
+      <div class="btn-group">
+        <a href="a" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="image.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="about-img">
+      <img src="image.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, porro quasi.
+        Quae voluptas voluptate distinctio in! Modi vero quia rem
+        perferendis vitae? Reiciendis
+        non sint sed id nulla quis rerum?</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+
+    <h2 class="heading">Services</h2>
+
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bxl-figma"></i>
+          <h4>UI/UX Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste corrupti
+            iusto eum, assumenda similique quae perspiciatis possimus laudantium,
+            pariatur neque porro mollitia sapiente quidem distinctio
+            repellat corporis amet doloremque!</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-code"></i>
+          <h4>Frontend Developer</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste corrupti
+            iusto eum, assumenda similique quae perspiciatis possimus laudantium,
+            pariatur neque porro mollitia sapiente quidem distinctio
+            repellat corporis amet doloremque!</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-code-curly"></i>
+          <h4>Backend Developer</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste corrupti
+            iusto eum, assumenda similique quae perspiciatis possimus laudantium,
+            pariatur neque porro mollitia sapiente quidem distinctio
+            repellat corporis amet doloremque!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+
+    <h2 class="heading">Projects</h2>
+
+    <div class="projects-box">
+
+      <div class="projects-card">
+        <img src="wordle.png" alt="">
+        <h3>Wordle Game</h3>
+        <p> An alternate, hint-powered Wordle game clone built with JavaScript
+           and the MVC pattern. Inspired by the classic, but with helpful hints and a scoring system
+            for a fresh challenge!</p>
+        <a class="btn" href="https://github.com/nanaboakye-dev/wordle-redefined" target="_blank">Review Project</a>
+      </div>
+
+      <div class="projects-card">
+        <img src="notes.png" alt="">
+        <h3>Notes-App</h3>
+        <p> A full-stack MERN application for creating, viewing, updating, and deleting notes. 
+          Features user-friendly UI, real-time updates, 
+          and secure backend with rate limiting and environment-based API key management.</p>
+        <a class="btn" href="https://github.com/nanaboakye-dev/notes-app.git">Review Project</a>
+      </div>
+
+      <div class="projects-card">
+        <img src="project3.png" alt="">
+        <h3>Project 3</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis earum nobis quaerat commodi alias
+          totam cum ipsa nostrum quidem, necessitatibus id voluptate placeat, cupiditate tenetur explicabo aspernatur?
+          Distinctio, praesentium.</p>
+        <div class="btn">Review Project</div>
+      </div>
+
+      <div class="projects-card">
+        <img src="project4.png" alt="">
+        <h3>Project 4</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis earum nobis quaerat commodi alias
+          totam cum ipsa nostrum quidem, necessitatibus id voluptate placeat, cupiditate tenetur explicabo aspernatur?
+          Distinctio, praesentium.</p>
+        <div class="btn">Review Project</div>
+      </div>
+
+      <div class="projects-card">
+        <img src="project5.png" alt="">
+        <h3>Project 5</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis earum nobis quaerat commodi alias
+          totam cum ipsa nostrum quidem, necessitatibus id voluptate placeat, cupiditate tenetur explicabo aspernatur?
+          Distinctio, praesentium.</p>
+        <div class="btn">Review Project</div>
+      </div>
+
+      <div class="projects-card">
+        <img src="project6.png" alt="">
+        <h3>Project 6</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis earum nobis quaerat commodi alias
+          totam cum ipsa nostrum quidem, necessitatibus id voluptate placeat, cupiditate tenetur explicabo aspernatur?
+          Distinctio, praesentium.</p>
+        <div class="btn">Review Project</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form id="contact-form" action="https://formspree.io/f/mvgrvdvj" method="POST">
+
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <input type="text" name="subject" placeholder="Subject">
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </div>
+
+    </form>
+    <div id="form-success" style="display:none;color:green;margin-top:1em;">Thank you! Your message has been sent.</div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/nanaboakye-dev" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/nana-boakye-osei-frimpong-55a88a345" target="_blank">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+
+      <a href="">
+        <i class="bx bxl-instagram-alt"></i>
+
+      </a>
+
+      <a href="">
+        <i class="bx bxl-snapchat"></i>
+
+      </a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <p class="copyright">
+      &copy; Nana Boakye | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('contact-form');
+      var successMsg = document.getElementById('form-success');
+      if(form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var data = new FormData(form);
+          fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(function(response) {
+            if (response.ok) {
+              form.reset();
+              if(successMsg) successMsg.style.display = 'block';
+            } else {
+              response.json().then(function(data) {
+                alert(data.error || 'Oops! There was a problem submitting your form');
+              });
+            }
+          }).catch(function(error) {
+            alert('Oops! There was a problem submitting your form');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>
